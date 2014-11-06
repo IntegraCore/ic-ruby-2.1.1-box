@@ -17,7 +17,7 @@ ssh-keygen -P '' -f ~/.ssh/id_rsa
 ssh-keyscan -H cerebro >> ~/.ssh/known_hosts
 ssh-keyscan -H tron >> ~/.ssh/known_hosts
 ssh-keyscan -H richards >> ~/.ssh/known_hosts
-sshpass -p 'honesty' ssh-copy-id cerebro
+sshpass -p 'honesty~1' ssh-copy-id cerebro
 sshpass -p 'INTEGRITY+fun' ssh-copy-id tron
 sshpass -p 'honesty~1' ssh-copy-id richards
 
