@@ -5,7 +5,7 @@ Vagrant.configure('2') do |config|
   config.vm.hostname = 'ic-dev-box'
 
   config.vm.network :forwarded_port, guest: 3000, host: 3000
-  config.vm.synced_folder "d:/virtuals/VagrantProjects", "/home/vabgrant/projects"
+  config.vm.synced_folder "d:/virtuals/VagrantProjects", "/home/vagrant/projects"
 
   config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
   config.vm.provision :shell, path: 'userstrap.sh', keep_color: true, privileged: false
