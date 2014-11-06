@@ -1,0 +1,7 @@
+Host cerebro
+	User root
+	HostName cerebro.integracore.net
+Host tron
+	User root
+Host richards
+	User administrator
