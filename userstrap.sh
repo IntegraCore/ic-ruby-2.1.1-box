@@ -9,6 +9,7 @@ echo installing 2.1.1
 sudo -u vagrant --login rvm install 2.1.1
 sudo -u vagrant --login gem install rails --no-ri --no-rdoc
 
+sed -i '1iforce_color_prompt=yes' ~/.bashrc
 
 
 mkdir ~/.ssh
