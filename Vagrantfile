@@ -11,6 +11,6 @@ Vagrant.configure('2') do |config|
   config.vm.provision :shell, path: 'userstrap.sh', keep_color: true, privileged: false
 
   config.vm.provider :virtualbox do |vb|
-  	vb.gui = true
+  	vb.gui = false
   end
 end
