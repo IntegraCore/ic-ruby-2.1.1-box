@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # A Virtual Machine for Ruby on Rails Core Development
 
 ## Introduction
@@ -155,3 +156,7 @@ Please check the Vagrant documentation on [NFS synced folders](http://docs.vagra
 ## License
 
 Released under the MIT License, Copyright (c) 2012–<i>ω</i> Xavier Noria.
+=======
+# ruby-2.1.1-box
+A simple Ubuntu environment for Ruby Development
+>>>>>>> aba4ded8c4892f86fc8c04d48a2f5a4ec13f594e
