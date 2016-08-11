@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# A Virtual Machine for Ruby on Rails Core Development
+# A Virtual Ubuntu Machine for Ruby on Rails Core Development
 
 ## Introduction
 
@@ -13,12 +12,14 @@ This project automates the setup of a development environment for working on Rub
 
 * [Vagrant](http://vagrantup.com)
 
+* Follow the [Confluence Installation Guide](https://integracore.atlassian.net/wiki/pages/viewpage.action?pageId=30310402) for a complete installation overview.
+
 ## How To Build The Virtual Machine
 
 Building the virtual machine is this easy:
 
-    host $ git clone https://github.com/rails/rails-dev-box.git
-    host $ cd rails-dev-box
+    host $ git clone https://github.com/IntegraCore/ic-ruby-2.1.1-box.git
+    host $ cd ic-ruby-2.1.1-box
     host $ vagrant up
 
 That's it.
@@ -28,7 +29,7 @@ After the installation has finished, you can access the virtual machine with
     host $ vagrant ssh
     Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-36-generic i686)
     ...
-    vagrant@rails-dev-box:~$
+    `vagrant@ic-ruby-2.1.1-box:~$`
 
 Port 3000 in the host computer is forwarded to port 3000 in the virtual machine. Thus, applications running in the virtual machine can be accessed via localhost:3000 in the host computer.
 
@@ -60,11 +61,11 @@ Port 3000 in the host computer is forwarded to port 3000 in the virtual machine.
 
 The recommended workflow is
 
-* edit in the host computer and
+* edit in the host computer (with sublime, atom, etc) and
 
-* test within the virtual machine.
+* work, test and run code within the virtual machine (via the command line).
 
-Just clone your Rails fork into the rails-dev-box directory on the host computer:
+Just clone your Rails fork into the ic-ruby-2.1.1-box directory on the host computer:
 
     host $ ls
     README.md   Vagrantfile puppet
@@ -72,13 +73,13 @@ Just clone your Rails fork into the rails-dev-box directory on the host computer
 
 Vagrant mounts that directory as _/vagrant_ within the virtual machine:
 
-    vagrant@rails-dev-box:~$ ls /vagrant
+    vagrant@ic-ruby-2.1.1-box:~$ ls /vagrant
     puppet  rails  README.md  Vagrantfile
 
 Install gem dependencies in there:
 
-    vagrant@rails-dev-box:~$ cd /vagrant/rails
-    vagrant@rails-dev-box:/vagrant/rails$ bundle
+    vagrant@ic-ruby-2.1.1-box:~$ cd /vagrant/rails
+    vagrant@ic-ruby-2.1.1-box:/vagrant/rails$ bundle
 
 We are ready to go to edit in the host, and test in the virtual machine.
 
